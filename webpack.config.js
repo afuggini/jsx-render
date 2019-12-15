@@ -18,6 +18,19 @@ module.exports = {
           extends: path.resolve(__dirname, '.babelrc'),
         },
       },
+      {
+        test: /\.tsx?$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {},
+          },
+        ],
+        options: {
+          extends: path.resolve(__dirname, '.babelrc'),
+        },
+        exclude: /node_modules/,
+      },
     ],
   },
 
