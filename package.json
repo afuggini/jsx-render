@@ -6,7 +6,7 @@
   "main": "lib/dom.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alecsgone/jsx-render.git"
+    "url": "git+https://github.com/afuggini/jsx-render.git"
   },
   "keywords": [
     "JSX",
@@ -15,9 +15,9 @@
   ],
   "author": "Aleks",
   "bugs": {
-    "url": "https://github.com/alecsgone/jsx-render/issues"
+    "url": "https://github.com/afuggini/jsx-render/issues"
   },
-  "homepage": "https://github.com/alecsgone/jsx-render#readme",
+  "homepage": "https://github.com/afuggini/jsx-render#readme",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config examples/webpack.config.js --hot",
@@ -31,8 +31,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "npm run test"
     }
   },
   "ava": {
