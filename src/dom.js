@@ -60,7 +60,7 @@ function createElements(tagName, attrs, children) {
  */
 function composeToFunction(JSXTag, elementProps, children) {
   const props = Object.assign({}, JSXTag.defaultProps || {}, elementProps, { children })
-  const bridge = JSXTag.prototype.render ? new JSXTag(props).render : JSXTag
+  const bridge = JSXTag.prototype && JSXTag.prototype.render ? new JSXTag(props).render : JSXTag
   const result = bridge(props)
 
   switch (result) {
